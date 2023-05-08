@@ -1,0 +1,35 @@
+#title {
+    font-size: 80px;
+    min-height: 100%;
+    position: relative;
+    color: #00F2F2;
+    text-align: center;
+    text-shadow: 2px 2px #D138BF;
+    right: 0px;
+}
+
+#LogButton {
+    background-color: #6B9AC4;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 40px;
+}
+#SignButton {
+    background-color: #6B9AC4;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 90px;
+}
+#bodyText {
+    position: absolute;
+    text-align: center;
+    color: #B3C2F2;
+    bottom: 300px;
+}
+
+body {
+    background-image: linear-gradient(to bottom,#5F1A37, #776885,#73C2BE,#73EEDC);
+    height: 750px;
+}
