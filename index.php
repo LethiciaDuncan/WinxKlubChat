@@ -15,6 +15,7 @@
     </head>
         
     <body>
+        <img id ="img" src="/Images/logo.png" style="width:100px;height:75px;">
         <h1 class="display-4" id="title"> Winx Klub</h1>
         <button class="btn btn-light btn-lg" id="LogButton">Login
         </button>
@@ -22,11 +23,8 @@
         </button>
       
         <pre id="bodyText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper tempor arcu quis mollis. Aliquam congue odio vitae orci volutpat ornare.
-        Integer leo justo, volutpat a lacinia quis, ultricies ac mi. Fusce condimentum, nisl at varius mattis, nibh lorem congue massa, ac vestibulum ipsum tortor ut metus.
-         Nam ultrices quam quis viverra commodo. Vestibulum et posuere ligula. Duis maximus, sapien eu porta faucibus, nibh est maximus orci, eget dignissim leo dui eu nibh.
-        Sed laoreet sapien purus, non sodales augue porttitor non. Mauris sit amet convallis felis. Vivamus mollis pharetra porta. Mauris laoreet dolor risus, pretium faucibus dui dapibus ac. 
-        Fusce quis condimentum ante.
+        Welcome to Winx Klub Chat. This is a site where you can message other people. 
+        Please log in if you already have an account, else please use the sign up button to get started.
 
         </pre>
 
