@@ -7,6 +7,21 @@
     text-shadow: 2px 2px #D138BF;
     right: 0px;
 }
+.headerDiv {
+    position:absolute;
+    top: 5%;
+    background-color: white;
+    width: 1500px;
+    height: 5px;
+}
+.footerDiv {
+    position: absolute;
+    bottom: 0.5%;
+    background-color: #5F1A37;
+    width: 1500px;
+    height: 5px;
+}
+
 
 #LogButton {
     background-color: #6B9AC4;
@@ -14,6 +29,13 @@
     cursor: pointer;
     top: 10px;
     right: 40px;
+}
+#SignButton {
+    background-color: #6B9AC4;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 90px;
 }
 #AccountButton {
     background-color: #6B9AC4;
@@ -38,11 +60,25 @@
     right: 90px;
 }
 #bodyText {
-    position: absolute;
+    position:absolute;
     text-align: center;
     color: #B3C2F2;
-    bottom: 300px;
-    left: 300px;
+    top: 50%;
+    left: 25%;
+
+}
+
+#formText {
+    position: center;
+    text-align: center;
+    color: #B3C2F2;
+}
+
+.messageDiv {
+    position: center;
+    width:30px;
+    height:30px;
+    border-block-color:#ffff;
 }
 
 #img {
@@ -52,6 +88,8 @@
 }
 
 body {
+    position:center;
     background-image: linear-gradient(to bottom,#5F1A37, #776885,#73C2BE,#73EEDC);
-    height: 750px;
+    height: 650px;
 }
+

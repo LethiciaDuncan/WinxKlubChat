@@ -13,8 +13,8 @@
             }
         </style>
     </head>
-        
     <body>
+         <div class =" headerDiv"></div>
         <img id ="img" src="/Images/logo.png" style="width:100px;height:75px;">
         <h1 class="display-4" id="title"> Winx Klub</h1>
         <button class="btn btn-light btn-lg" id="LogButton">Login
@@ -28,6 +28,7 @@
 
         </pre>
 
+        <div class ="footerDiv"></div>
         </body>
 
         </html>

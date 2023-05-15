@@ -1,8 +1,6 @@
 <?php
-include_once('Header.php');
+
 ?>
-<!Doctype html>
-<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="/Style.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" />
@@ -15,19 +13,15 @@ include_once('Header.php');
             }
     </style>
 </head>
-
-<body>
-    <img id="img" src="/Images/logo.png" style="width:100px;height:75px;" />
-    <h1 class="display-4" id="title"> User</h1>
-    <button class="btn btn-light btn-lg" id="LogOutButton">
-        Logout
-    </button>
-    <pre id="bodyText"></pre>
-
-</body>
-
-<?php
-include_once('Footer.php');
-?>
-
-</html>
+<div id=" headerDiv"></div>
+<ul>
+    <li>
+        <a href="*/MessagesPage.php">Messages</a>
+    </li>
+    <li>
+        <a href="*/ProfilePage.php">Profile</a>
+    </li>
+    <li>
+        <a href="*/ConversationsPage.php">Conversations</a>
+    </li>
+</ul>

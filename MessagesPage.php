@@ -1,5 +1,5 @@
 <?php
-
+include_once('Header.php');
 ?>
 <!Doctype html>
 <html lang="en">
@@ -19,15 +19,21 @@
 <body>
     <img id="img" src="/Images/logo.png" style="width:100px;height:75px;" />
     <h1 class="display-4" id="title"> Messages</h1>
-    <button class="btn btn-light btn-lg" id="LogOutButton">
-        Logout
-    </button>
-    <button class="btn btn-light btn-lg" id="ProfileButton">
-        Profile
-    </button>
 
     <pre id="bodyText"></pre>
+        <form id="formText"  action="">
+            <div ckass ="messageDiv">
+            <label for="userName">Send To:</label><br />
+            <input type="text" id="userNameSend" name="userNameSend"/><br />
+            <label for="messageText"></label><br />
+            <input type="text" id="messageText" name="messageText" /><br /><br />
+            </div>
+            <input type="submit" value="Submit" />
+         </form>
+    
+        </body>
 
-</body>
-
+<?php
+include_once('Footer.php');
+?>
 </html>
