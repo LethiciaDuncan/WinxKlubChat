@@ -13,8 +13,9 @@
             }
     </style>
 </head>
+<img id="img" src="/Images/logo.png" style="width:50px;height:35px;" />
 <div id=" headerDiv"></div>
-<ul>
+<ul id="navBar">
     <li>
         <a href="*/MessagesPage.php">Messages</a>
     </li>

@@ -17,19 +17,17 @@ include_once('Header.php');
 </head>
 
 <body>
-    <h1 class="display-4" id="title"> Messages</h1>
+    <h1 class="display-4" id="title"> Conversations</h1>
 
-        <form id="formText"  action="">
-            <div ckass ="bioDiv">
-            <label for="userName">Send To:</label><br />
-            <input type="text" id="userNameSend" name="userNameSend"/><br />
-            <label for="messageText"></label><br />
-            <input type="text" id="messageText" name="messageText" /><br /><br />
-            </div>
-            <input type="submit" value="Submit" />
-         </form>
-    
-        </body>
+   <div class="conversationsDiv">
+       <ol>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ol>
+   </div>
+
+</body>
 
 <?php
 include_once('Footer.php');

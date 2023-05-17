@@ -17,12 +17,17 @@ include_once('Header.php');
 </head>
 
 <body>
-    <img id="img" src="/Images/logo.png" style="width:100px;height:75px;" />
     <h1 class="display-4" id="title"> User</h1>
     <button class="btn btn-light btn-lg" id="LogOutButton">
         Logout
     </button>
-    <pre id="bodyText"></pre>
+    <<form id="bioText"  action="">
+            <div ckass ="messageDiv">
+            <label for="bioText">Bio</label><br />
+            <input type="text" id="bioText" name="bioText" value="Tell us about you" />
+            </div>
+            <input type="submit" value="Submit" />
+         </form>
 
 </body>
 

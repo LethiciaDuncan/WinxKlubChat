@@ -1,7 +1,8 @@
 <?php
 
 ?>
-<footer>
-    <div class=" footerDiv"></div>
-    <p id="footerText">Test footer text</p>
-</footer>
+ <div class ="footerDiv">
+            <footer id="footerText">
+                Winx Klub is best Club
+            </footer>
+     </div>
