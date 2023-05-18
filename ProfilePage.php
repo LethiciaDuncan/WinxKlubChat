@@ -18,15 +18,15 @@ include_once('Header.php');
 
 <body>
     <h1 class="display-4" id="title"> User</h1>
-    <button class="btn btn-light btn-lg" id="LogOutButton">
+    <button class="btn btn-light btn-lg" onclick="redirectLogin()" id="LogOutButton">
         Logout
     </button>
-    <<form id="bioText"  action="">
-            <div ckass ="messageDiv">
+    <form class="bioText"  action="">
+            <div id ="bioDiv">
             <label for="bioText">Bio</label><br />
             <input type="text" id="bioText" name="bioText" value="Tell us about you" />
             </div>
-            <input type="submit" value="Submit" />
+        <input id="submitbutton" type="submit" value="Submit" />
          </form>
 
 </body>
@@ -36,6 +36,7 @@ include_once('Footer.php');
 ?>
 
 <script>
+        function redirectLogin() { window.location.href = "*/Logout.php"; }
         var request = new XMLHttpRequest();
 
     window.onload = (event) => {

@@ -14,15 +14,17 @@
     </style>
 </head>
 <img id="img" src="/Images/logo.png" style="width:50px;height:35px;" />
-<div id=" headerDiv"></div>
-<ul id="navBar">
-    <li>
-        <a href="/MessagesPage.php">Messages</a>
-    </li>
-    <li>
-        <a href="/ProfilePage.php">Profile</a>
-    </li>
-    <li>
-        <a href="/Conversations.php">Conversations</a>
-    </li>
-</ul>
+<nav class="navBar">
+    <ul>
+        <li>
+            <a href="/ProfilePage.php">Profile</a>
+        </li>
+        <li>
+            <a href="/MessagesPage.php">Messages</a>
+        </li>
+        <li>
+            <a href="/Conversations.php">Conversations</a>
+        </li>
+    </ul>
+</nav>
+<div class="headerDiv"></div>

@@ -18,12 +18,15 @@ include_once('Header.php');
 
 <body>
     <h1 class="display-4" id="title"> Conversations</h1>
+    <button class="btn btn-light btn-lg" onclick="redirectLogin()" id="LogOutButton">
+        Logout
+    </button>
 
    <div class="conversationsDiv">
-       <ol id="conversationList">
-           <li></li>
-           <li></li>
-           <li></li>
+       <ol >
+           <li><pre>Person name goes here</pre></li>
+           <li><pre>Person name goes here</pre></li>
+           <li><pre>Person name goes here</pre></li>
        </ol>
    </div>
 
@@ -35,6 +38,8 @@ include_once('Footer.php');
 </html>
 
 <script>
+    function redirectLogin() { window.location.href = "*/Logout.php"; }
+ 
     var request = new XMLHttpRequest();
 
     window.onload = (event) => {

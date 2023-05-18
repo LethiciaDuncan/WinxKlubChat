@@ -18,15 +18,18 @@ include_once('Header.php');
 
 <body>
     <h1 class="display-4" id="title"> Messages</h1>
+    <button class="btn btn-light btn-lg" onclick="redirectLogin()" id="LogOutButton">
+        Logout
+    </button>
 
-        <form id="formText"  action="">
-            <div ckass ="bioDiv">
+        <form class="formText"  action="">
+            <div id ="messageDiv">
             <label for="userName">Send To:</label><br />
             <input type="text" id="userNameSend" name="userNameSend"/><br />
             <label for="messageText"></label><br />
             <input type="text" id="messageText" name="messageText" /><br /><br />
             </div>
-            <input type="submit" value="Submit" />
+            <input id="submitbutton" type="submit" value="Submit" />
          </form>
     <?php
             if(array_key_exists("ChatId", $_GET)){
@@ -36,6 +39,7 @@ include_once('Header.php');
     ?>
 
     <script>
+    function redirectLogin() { window.location.href = "*/Logout.php"; }
     var request = new XMLHttpRequest();
 
     window.onload = (event) => {
