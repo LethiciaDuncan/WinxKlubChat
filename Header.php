@@ -23,6 +23,6 @@
         <a href="/ProfilePage.php">Profile</a>
     </li>
     <li>
-        <a href="/Conversations.php">Conversations</a>
+        <a href="/Conversations1.php">Conversations</a>
     </li>
 </ul>

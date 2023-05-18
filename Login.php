@@ -7,6 +7,10 @@ if(array_key_exists("alreadyTriedP", $_GET)){
 if(array_key_exists("alreadyTriedU", $_GET)){
     echo "<div class='alert alert-danger'>User could not be found.</div>";
 }
+
+if(array_key_exists("AddedUser", $_GET)){
+    echo "<div class='alert alert-danger' style=color:'Green' >Yor user has been added, LOGIN!</div>";
+}
 ?>
 <head>
     <link rel="stylesheet" type="text/css" href="/Style.css" />
