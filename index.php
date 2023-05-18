@@ -23,7 +23,7 @@
         </button>
       
         <pre id="bodyText">
-        Welcome to Winx Klub Chat. This is a site where you can message other people. 
+        Welcome to Winx Klub Chat. This is a site where you can message other people.
         Please log in if you already have an account, else please use the sign up button to get started.
 
         </pre>
