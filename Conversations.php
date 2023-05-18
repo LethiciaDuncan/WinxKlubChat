@@ -35,7 +35,7 @@ include_once('Footer.php');
 </html>
 
 <script>
-        var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
 
     window.onload = (event) => {
         loadJson()

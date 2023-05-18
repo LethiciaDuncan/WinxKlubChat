@@ -62,9 +62,10 @@ function getAllOfUserChats($dbConn, $UserId){
 
 function getAllChatsMessages($dbConn, $chatId){
 
-    $query = "select *
-        from messages
-        where messages.ChatId = " . $chatId . ";";
+    $query = "select message.MessageId, message.Content, message.TimeStamp, users.UserName, users.UserId
+        from messages message
+        inner join users on users.UserId = message.UserId
+        where message.ChatId =" . $chatId . ";";
 
     return @mysqli_query($dbConn, $query);
 }
