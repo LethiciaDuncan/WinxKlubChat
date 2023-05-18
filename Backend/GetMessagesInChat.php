@@ -11,14 +11,12 @@ if ($_SESSION['signedIn'] == true) {
     $myDbConn = ConnGet();
     if(array_key_exists("ChatId", $_GET)){
         $chatId = $_GET["ChatId"];
-        
-        $chatId = $_SESSION['UserId'];
         $dataset = getAllChatsMessages($myDbConn, $chatId);
         $rowArray = array();
         $foundChats = false;
 
         while ($row = mysqli_fetch_array($dataset)) {
-            $rowArray[] = array('ChatId' => $row[0], 'ChatName' => $row[1]);
+            $rowArray[] = array('MessageId' => $row[0], 'Content' => $row[1], 'TimeStamp' => $row[2], 'userName' => $row[3], 'UserId' => $row[4]);
             $foundChats = true;
         }
 
