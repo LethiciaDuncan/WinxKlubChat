@@ -15,7 +15,7 @@
     </head>
     <body>
          <div class =" headerDiv"></div>
-        <img id ="img" src="/Images/logo.png" style="width:100px;height:75px;">
+        <img id ="img" src="/Images/logo.png" style="width:50px;height:35px;">
         <h1 class="display-4" id="title"> Winx Klub</h1>
         <button class="btn btn-light btn-lg" id="LogButton">Login
         </button>
@@ -28,7 +28,11 @@
 
         </pre>
 
-        <div class ="footerDiv"></div>
+        <div class ="footerDiv">
+            <footer id="footerText">
+                Winx Klub is best Club
+            </footer>
+        </div>
         </body>
 
         </html>
