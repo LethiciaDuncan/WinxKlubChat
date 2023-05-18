@@ -17,12 +17,12 @@
 <div id=" headerDiv"></div>
 <ul id="navBar">
     <li>
-        <a href="*/MessagesPage.php">Messages</a>
+        <a href="/MessagesPage.php">Messages</a>
     </li>
     <li>
-        <a href="*/ProfilePage.php">Profile</a>
+        <a href="/ProfilePage.php">Profile</a>
     </li>
     <li>
-        <a href="*/ConversationsPage.php">Conversations</a>
+        <a href="/Conversations.php">Conversations</a>
     </li>
 </ul>
