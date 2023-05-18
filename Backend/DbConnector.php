@@ -1,6 +1,9 @@
 <?php
 
-
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PSWD', 'Nonfiction10?');
+DEFINE ('DB_SERVER', 'localhost:3306');
+DEFINE ('DB_NAME', 'winxklubchat');
 
 session_start();
 
@@ -43,8 +46,9 @@ function addMessageToChat($dbConn, $Message ,$UserId, $ChatId){
 
 }
 
+
 function getAllOfUserChats($dbConn, $UserId){
-       $query = "select *
+       $query = "select ChatId, ChatName
         from (select users.UserId, chats.ChatId, chats.ChatName
         from userchats
 	        inner join chats
