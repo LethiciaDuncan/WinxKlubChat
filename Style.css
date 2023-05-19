@@ -8,109 +8,8 @@
     right: 0px;
 }
 
-
-
-.u1 {
-    position: absolute;
-    font-size: medium;
-    top: 35%;
-    left: 35%;
-    width: 170px;
-    height: 50px;
-    text-align: center;
-    padding: 5px;
-    background-color: #00F2F2;
-}
-.p1 {
-    position: absolute;
-    font-size:medium;
-    top: 35%;
-    left: 47%;
-    width: 170px;
-    height: 50px;
-    text-align: center;
-    padding: 5px;
-    background-color: #00F2F2;
-}
-
-.e1 {
-    position: absolute;
-    font-size: medium;
-    top: 45%;
-    left: 35%;
-    width: 352px;
-    height: 50px;
-    text-align: center;
-    padding: 5px;
-    background-color: #00F2F2;
-}
-.b1{
-
-        position: absolute;
-    font-size: medium;
-    top: 53%;
-    left: 35%;
-    width: 352px;
-    height: 50px;
-    text-align: center;
-    padding: 5px;
-    background-color: #00F2F2;
-}
-.btnlog {
-    position: absolute;
-    font-size: medium;
-    top: 35%;
-    left: 59%;
-    width: 80px;
-    height: 50px;
-    text-align: center;
-    padding: 5px;
-    background-color: #00F2F2;
-}
-.d1 {
-    position: absolute;
-    top: 25%;
-    width: 1500px;
-    height: 5px;
-    text-shadow: 2px 2px #D138BF;
-    text-align: center;
-    padding: 5px;
-    color: #00F2F2;
-}
-.d2 {
-    position: absolute;
-    top: 30%;
-    width: 1500px;
-    height: 5px;
-    text-shadow: 2px 2px #D138BF;
-    text-align: center;
-    padding: 5px;
-    color: #00F2F2;
-
-}
-.d3 {
-    position: absolute;
-    top: 35%;
-    width: 1500px;
-    height: 5px;
-    text-shadow: 2px 2px #D138BF;
-    text-align: center;
-    padding: 5px;
-    color: #00F2F2;
-}
-
-.d4 {
-    position: absolute;
-    top: 40%;
-    width: 1500px;
-    height: 5px;
-    text-shadow: 2px 2px #D138BF;
-    text-align: center;
-    padding: 5px;
-    color: #00F2F2;
-}
 .headerDiv {
-    position:absolute;
+    position: absolute;
     top: 5%;
     background-color: white;
     width: 1500px;
@@ -127,42 +26,6 @@
     color: #947EB0;
 }
 
-#ContactButton {
-    background-color: #6B9AC4;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 200px;
-}
-#AboutContactButton {
-    background-color: #6B9AC4;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 150px;
-}
-#AboutHomeButton {
-    background-color: #6B9AC4;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right:212px;
-}
-#HomeButton {
-    background-color: #6B9AC4;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 200px;
-}
-#AboutButton {
-    background-color: #6B9AC4;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 150px;
-}
-
 
 #LogButton {
     background-color: #6B9AC4;
@@ -171,6 +34,7 @@
     top: 10px;
     right: 40px;
 }
+
 #SignButton {
     background-color: #6B9AC4;
     position: absolute;
@@ -178,6 +42,7 @@
     top: 10px;
     right: 90px;
 }
+
 #AccountButton {
     background-color: #6B9AC4;
     position: absolute;
@@ -185,6 +50,7 @@
     top: 10px;
     right: 90px;
 }
+
 #LogoutButton {
     background-color: #6B9AC4;
     position: absolute;
@@ -200,6 +66,7 @@
     top: 10px;
     right: 90px;
 }
+
 #bodyText {
     position: absolute;
     text-align: center;
@@ -230,6 +97,7 @@
     height: 30px;
     border-block-color: #ffff;
 }
+
 .conversationsDiv {
     position: center;
     text-align: center;
@@ -260,8 +128,43 @@
 }
 
 body {
-    position:center;
+    position: center;
     background-image: linear-gradient(to bottom,#5F1A37, #776885,#73C2BE,#73EEDC);
     height: 650px;
 }
 
+.infoUsername {
+    position: absolute;
+    top: 25%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 10px;
+    color: #00F2F2;
+    font-size: 40px;
+}
+
+.infoEmail {
+    position: absolute;
+    top: 45%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
+
+.infoBio {
+    position: absolute;
+    top: 50%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
