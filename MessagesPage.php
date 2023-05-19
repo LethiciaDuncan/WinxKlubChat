@@ -1,7 +1,7 @@
 
 <!Doctype html>
 <html lang="en">
-
+<?PHP include_once "Header.php"; ?>
 
 <body>
     <h1 class="display-4" id="title"> Messages </h1>
