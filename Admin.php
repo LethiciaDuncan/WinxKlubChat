@@ -35,10 +35,10 @@ include_once('Footer.php');
     window.onload = (event) => {
         loadJson()
     }
+        // create chats (chatname)
 
 
-
-
+        // delete chats (chatId)
     function deleteChat() {
 
     }
@@ -46,7 +46,7 @@ include_once('Footer.php');
     function deleteMessage() {
 
     }
-
+        // change chat names (Chat id, chatname to update to)
     function EditChat() {
 
     }
@@ -58,7 +58,12 @@ include_once('Footer.php');
 
 
 
+        
 
+
+// add users to chats (userId, chatId)
+
+// remove users from chats (userId, chatId)
 
 
 

@@ -16,6 +16,11 @@
             <input type="submit" value="Submit" />
          </form>-->
     <div id="messages" class="messages"></div>
+    <form>
+        <input type="text" placeholder="please enter a message" />
+        <input type="submit" />
+    </form>
+    
     <div id='ChatId' hidden>1</div>
     <script>
     var request = new XMLHttpRequest();
