@@ -21,6 +21,42 @@ include_once('Header.php');
 
 <body>
     <h1 class="display-4" id="title"> Who you are doesn't matter, but what you do does, LETS SEE WHAT U WILL MANAGE TODAY!'</h1>
+    <label>Change Chat Name:</label>
+    <form>
+        <input type="text" id="ChangeChatName" name="ChangeChatName"/>
+    </form> <!--Change chat names-->
+
+    <label>Create New Chat:</label>
+    <form>
+        <input type="number" id="NewChatId" name="NewChatId" />
+    </form> 
+    <form>
+        <input type="text" id="NewChatName" name="NewChatName" />
+    </form><!--Create Chat-->
+
+    <label>Delete Chat:</label>
+    <form>
+        <input type="number" id="DeleteChatId" name="DeleteChatId" />
+    </form>
+    <form>
+        <input type="text" id="DeleteChatName" name="DeleteChatName" />
+    </form> <!--Delete Chat-->
+
+    <label>Add User to Chat:</label>
+    <form>
+        <input type="number" id="AddUserId" name="AddUserId" />
+    </form>
+    <form>
+        <input type="text" id="AddChatName" name="AddChatName" />
+    </form> <!--Add User to  Chat-->
+
+    <label>Remove User from Chat:</label>
+    <form>
+        <input type="number" id="RemoveUserId" name="RemoveUserId" />
+    </form>
+    <form>
+        <input type="text" id="RemoveChatName" name="RemoveChatName" />
+    </form><!--Remove User from Chat-->
     
 
 </body>

@@ -16,12 +16,15 @@
             <input type="submit" value="Submit" />
          </form>-->
     <div id="messages" class="messages"></div>
-    <form>
-        <input type="text" placeholder="please enter a message" />
-        <input type="submit" />
-    </form>
-    
-    <div id='ChatId' hidden>1</div>
+
+    <?php
+    if(array_key_exists("ChatId", $_GET)){
+        $chatId = $_GET['ChatId'];
+        echo "<div id='ChatId' hidden>" . $chatId . "</div>";
+    }
+    ?>
+
+
     <script>
     var request = new XMLHttpRequest();
 
