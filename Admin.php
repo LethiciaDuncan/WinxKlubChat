@@ -21,6 +21,11 @@ include_once('Header.php');
 
 <body>
     <h1 class="display-4" id="title"> Who you are doesn't matter, but what you do does, LETS SEE WHAT U WILL MANAGE TODAY!'</h1>
+    <form></form> <!--Change chat names-->
+    <form></form> <!--Create Chat-->
+    <form></form> <!--Delete Chat-->
+    <form></form> <!--Add User to  Chat-->
+    <form></form> <!--Remove User from Chat-->
     
 
 </body>
