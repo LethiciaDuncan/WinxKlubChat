@@ -7,7 +7,7 @@ header('Content-Type: application/json');
 
 
 
-if($_SESSION['signedIn'] == True){
+if($_SESSION['signedInAdmin'] == True){
     $myDbConn = ConnGet();
     $chatName = $_POST['ChatName'];
     $dataset = addChat($myDbConn, $chatName);

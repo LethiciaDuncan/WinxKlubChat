@@ -7,7 +7,7 @@ header('Content-Type: application/json');
 
 
 
-if($_SESSION['signedIn'] == True){
+if($_SESSION['signedInAdmin'] == True){
     $myDbConn = ConnGet();
     $userId = $_POST['UserId'];
     $chatId = $_POST['ChatId'];
@@ -16,8 +16,6 @@ if($_SESSION['signedIn'] == True){
 
     mysqli_close($myDbConn);
     header("Location: ../Admin.php");
-    
-    mysqli_close($myDbConn);
 }
 
 

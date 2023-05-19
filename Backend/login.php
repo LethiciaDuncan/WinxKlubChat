@@ -2,14 +2,25 @@
 include_once "DbConnector.php";
 
 header('Content-Type: application/json');
+$adminUsername = "admin";
+$adminPassword = "password";
+
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$myDbConn = ConnGet();
 
-$dataSet = checkifUserExists($myDbConn, $username);
-   if ($dataSet){
+
+if($username == $adminUsername && $password == $adminPassword){
+    $_SESSION['signedIn']=True;
+    $_SESSION['signedInAdmin']= True;
+    header("Location: ../Admin.php?alreadyTriedP=1");
+}else{
+
+    $myDbConn = ConnGet();
+
+    $dataSet = checkifUserExists($myDbConn, $username);
+    if ($dataSet){
 
         if($row = mysqli_fetch_array($dataSet)) {
             $storedPassword = $row['Password'];
@@ -26,6 +37,8 @@ $dataSet = checkifUserExists($myDbConn, $username);
     }else{
         mysqli_close($myDbConn);
         header("Location: ../Login.php?alreadyTriedU=1");
-   }
+    }
+}
+
 
 ?>

@@ -16,8 +16,11 @@ if($_SESSION['signedIn'] == True){
 
 
     if($dataset){
+
         mysqli_close($myDbConn);
+
         header("Location: ../messages.php?ChatId=" . $chatId . "");
+
     }
 
 }
