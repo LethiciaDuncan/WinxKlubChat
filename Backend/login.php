@@ -16,12 +16,15 @@ $dataSet = checkifUserExists($myDbConn, $username);
             if($password == $storedPassword){
                 $_SESSION['signedIn']=True;
                 $_SESSION['UserId']= $row['UserId'];
+                mysqli_close($myDbConn);
                 header("Location: ../ProfilePage.php");
             }else{
+                mysqli_close($myDbConn);
                 header("Location: ../Login.php?alreadyTriedP=1");
             }
         }
     }else{
+        mysqli_close($myDbConn);
         header("Location: ../Login.php?alreadyTriedU=1");
    }
 

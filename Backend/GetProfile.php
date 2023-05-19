@@ -22,6 +22,7 @@ if($_SESSION['signedIn'] == True){
                 header("Location: ../index.php");
                 //send them back and alert them they used the wrong password
             }
+    mysqli_close($myDbConn);
 
     echo $myJSON;
 }
