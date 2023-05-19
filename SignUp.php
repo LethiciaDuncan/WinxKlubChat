@@ -25,11 +25,11 @@ if(array_key_exists("UserAlreadyExists", $_GET)){
 
     <form action="Backend/SignUp.php" method="post">
         <input placeholder="Enter your username" class="u1" name="Username" id="Username" required />
-        <input placeholder="Enter your Email" class="u1" name="Email" id="Email" required />
+        <input placeholder="Enter your Email" class="e1" name="Email" id="Email" required />
         <br />
-        <input placeholder="Enter your Password" class="u1" name="Password" id="Password" required />
+        <input placeholder="Enter your Password" class="p1" name="Password" id="Password" required />
         <br />
-        <input placeholder="Enter A Bio" class="p1" name="Bio" id="Bio" required />
+        <input placeholder="Enter A Bio" class="b1" name="Bio" id="Bio" required />
         <br />
         <input type="submit" class="btnlog" value="Sign Up" />
     </form>

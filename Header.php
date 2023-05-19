@@ -15,6 +15,8 @@
 </head>
 <img id="img" src="/Images/logo.png" style="width:50px;height:35px;" />
 <div id=" headerDiv"></div>
+<br/>
+<br />
 <ul id="navBar">
     <li>
         <a href="/MessagesPage.php">Messages</a>
@@ -23,6 +25,8 @@
         <a href="/ProfilePage.php">Profile</a>
     </li>
     <li>
-        <a href="/Conversations1.php">Conversations</a>
+        <a href="/Conversations.php">Conversations</a>
     </li>
 </ul>
+
+
