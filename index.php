@@ -38,7 +38,7 @@
                 Winx Klub is best Club
             </footer>
         </div>
-        <script>function redirectLogin() { window.location.href = "LoginPage.php"; }
+        <script>function redirectLogin() { window.location.href = "profilePage.php"; }
             function redirectSignin() { window.location.href = "Signup.php"; } 
              function redirectAbout() {window.location.href = "About.php"; }
             function redirectContact() { window.location.href = "Contact.php"; }</script>
