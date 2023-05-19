@@ -1,14 +1,12 @@
-<?php
-include_once('Header.php');
-?>
+
 <!Doctype html>
 <html lang="en">
 
 
 <body>
-    <h1 class="display-4" id="title"> Messages</h1>
+    <h1 class="display-4" id="title"> Messages </h1>
 
-        <form id="formText"  action="">
+        <!--<form id="formText"  action="">
             <div ckass ="bioDiv">
             <label for="userName">Send To:</label><br />
             <input type="text" id="userNameSend" name="userNameSend"/><br />
@@ -16,14 +14,9 @@ include_once('Header.php');
             <input type="text" id="messageText" name="messageText" /><br /><br />
             </div>
             <input type="submit" value="Submit" />
-         </form>
-    <?php
-            if(array_key_exists("ChatId", $_GET)){
-            $chatId = $_GET['ChatId'];
-            echo "<div id='ChatId' hidden>" . $chatId . "</div>";
-        }
-    ?>
-
+         </form>-->
+    <div id="messages" class="messages"></div>
+    <div id='ChatId' hidden>1</div>
     <script>
     var request = new XMLHttpRequest();
 
@@ -56,6 +49,12 @@ include_once('Header.php');
         myData = JSON.parse(myResponse);
         console.log(myData)
         // alert(myData);
+        let chats = "";
+
+        for (index in myData) {
+            chats = chats + '<li><div id="' + myData[index].ChatId + '">' + myData[index].TimeStamp + "-" + myData[index].userName + ": " + myData[index].Content + '</a></li>';
+        }
+        document.getElementById("messages").innerHTML = chats;
 
         // Loop through each json record and create the HTML
 
@@ -76,8 +75,10 @@ include_once('Header.php');
         </body>
 
        
+ <div class ="footerDiv">
+            <footer id="footerText">
+                Winx Klub is best Club
+            </footer>
+     </div>
 
-<?php
-include_once('Footer.php');
-?>
 </html>

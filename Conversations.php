@@ -1,29 +1,24 @@
-<?php
-include_once('Header.php');
-?>
 <!Doctype html>
 <html lang="en">
-
+<?PHP include_once "Header.php"; ?>
 
 <body>
     <h1 class="display-4" id="title"> Conversations</h1>
 
-   <div class="conversationsDiv">
-       <ol id="conversationList">
-           <li></li>
-           <li></li>
-           <li></li>
-       </ol>
-   </div>
+    <div class="conversationsDiv">
+        <ol id="conversationList" class="conversationsList"></ol>
+    </div>
 
-</body>
 
-<?php
-include_once('Footer.php');
-?>
-</html>
 
-<script>
+    <div class="footerDiv">
+        <footer id="footerText">
+            Winx Klub is best Club
+        </footer>
+    </div>
+
+
+    <script>
     var request = new XMLHttpRequest();
 
     window.onload = (event) => {
@@ -31,7 +26,7 @@ include_once('Footer.php');
     }
 
     function loadJson() {
-           
+
         request.open('GET', './Backend/GetAllChatsUserIsIn.php');
         request.onload=loadComplete;
         request.send();
@@ -52,7 +47,12 @@ include_once('Footer.php');
         myData = JSON.parse(myResponse);
         console.log(myData)
         // alert(myData);
+        let chats = "";
 
+        for (index in myData) {
+            chats = chats + '<li><a href="MessagesPage.php?ChatId=' + myData[index].ChatId + '">' + myData[index].ChatName + '</a></li>';
+        }
+        document.getElementById("conversationList").innerHTML = chats;
         // Loop through each json record and create the HTML
 
         //for (index in myData) {
@@ -67,4 +67,10 @@ include_once('Footer.php');
         //document.getElementById("result").innerHTML = myReturn;// Display table
 
     }
-</script>
+    </script>
+</body>
+</html>
+
+<?php
+?>
+
