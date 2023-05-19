@@ -278,3 +278,63 @@ body {
     background-image: linear-gradient(to bottom,#5F1A37, #776885,#73C2BE,#73EEDC);
     height: 650px;
 }
+
+.infoUsername {
+    position: absolute;
+    top: 25%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 10px;
+    color: #00F2F2;
+    font-size: 40px;
+}
+
+.infoEmail {
+    position: absolute;
+    top: 45%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
+
+.infoBio {
+    position: absolute;
+    top: 50%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
+
+.messages {
+    position: absolute;
+    top: 40%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
+
+.conversationsList {
+    position: absolute;
+    top: 40%;
+    width: 1500px;
+    height: 15px;
+    text-shadow: 2px 2px #D138BF;
+    text-align: center;
+    padding: 5px;
+    color: #00F2F2;
+    font-size: 20px;
+}
