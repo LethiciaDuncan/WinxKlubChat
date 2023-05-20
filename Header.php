@@ -2,7 +2,10 @@
 
 ?>
 <head>
-    <link rel="stylesheet" type="text/css" href="/Style.css" />
+   
+
+    
+    <link rel='stylesheet' type='text/css' href='/Style.css' />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" />
     <style>
             body{
@@ -29,4 +32,6 @@
     </li>
 </ul>
 
+<?php
 
+?>

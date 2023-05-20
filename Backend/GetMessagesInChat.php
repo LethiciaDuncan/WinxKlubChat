@@ -20,14 +20,15 @@ if ($_SESSION['signedIn'] == true) {
             $foundChats = true;
         }
 
-        $myJSON = json_encode($rowArray);
-        mysqli_close($myDbConn);
-        echo $myJSON;
-
-        if (!$foundChats) {
+        if($foundChats){
+            $myJSON = json_encode($rowArray);
+            mysqli_close($myDbConn);
+            echo $myJSON;
+        }else{
             mysqli_close($myDbConn);
             header("Location: ../index.php");
         }
+
     }
 }
 

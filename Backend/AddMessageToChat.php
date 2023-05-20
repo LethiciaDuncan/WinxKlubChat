@@ -19,7 +19,7 @@ if($_SESSION['signedIn'] == True){
 
         mysqli_close($myDbConn);
 
-        header("Location: ../messages.php?ChatId=" . $chatId . "");
+        header("Location: ../MessagesPage.php?ChatId=" . $chatId );
 
     }
 

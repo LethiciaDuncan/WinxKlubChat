@@ -18,15 +18,16 @@ if ($_SESSION['signedIn'] == true) {
         $rowArray[] = array('ChatId' => $row[0], 'ChatName' => $row[1]);
         $foundChats = true;
     }
-
-    $myJSON = json_encode($rowArray);
-    mysqli_close($myDbConn);
-    echo $myJSON;
-
-    if (!$foundChats) {
+    if($foundChats){
+        $myJSON = json_encode($rowArray);
         mysqli_close($myDbConn);
+        echo $myJSON;
+    }else{
         header("Location: ../index.php");
     }
+
+
+   
 }
 
 

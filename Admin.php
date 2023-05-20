@@ -1,13 +1,20 @@
 
-<?php
-include_once('Header.php');
-//Add Delete Edit chats
-//Add Delete Edit Messages
-?>
 <!Doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/Style.css" />
+    <?php
+    if(array_key_exists('mode', $_GET)){
+        if($_GET['mode'] == "0"){
+            echo "<link rel='stylesheet' type='text/css' href='/Style2.css' />";
+        }else if($_GET['mode'] == "1"){
+             echo "<link rel='stylesheet' type='text/css' href='/Style.css' />";
+        }
+    }else{
+        echo "<link rel='stylesheet' type='text/css' href='/Style.css' />";
+    }
+
+
+    ?>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" />
     <style>
             body{
@@ -60,7 +67,17 @@ include_once('Header.php');
         <input type="number" id="ChatId" name="ChatId" placeholder="Please Enter a ChatId" />
         <input type="submit" value="Submit!" />
     </form><!--Remove User from Chat-->
-    
+    <label>Change Theme: </label>
+    <form action="Admin.php?mode=0" method="post">
+        <button class="btn btn-light btn-lg" id="KoolButton">
+            Kool Theme
+        </button>
+    </form>
+    <form action="Admin.php?mode=1" method="post">
+        <button class="btn btn-light btn-lg" id="WarmButton">
+            Warm Theme
+        </button>
+    </form>
 
 </body>
 </html>

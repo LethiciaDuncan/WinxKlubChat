@@ -20,7 +20,8 @@ if($username == $adminUsername && $password == $adminPassword){
     $myDbConn = ConnGet();
 
     $dataSet = checkifUserExists($myDbConn, $username);
-    if ($dataSet){
+
+    if (mysqli_num_rows($dataSet) != null){
 
         if($row = mysqli_fetch_array($dataSet)) {
             $storedPassword = $row['Password'];

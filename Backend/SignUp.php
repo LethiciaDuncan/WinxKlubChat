@@ -11,8 +11,8 @@ $password = $_POST['Password'];
 $myDbConn = ConnGet();
 
 $dataSet = checkifUserExists($myDbConn, $username);
-    mysqli_close($myDbConn);
-if($dataSet){
+
+if(mysqli_num_rows($dataSet) != null){
     header("Location: ../SignUp.php?UserAlreadyExists=1");
 
 }else{

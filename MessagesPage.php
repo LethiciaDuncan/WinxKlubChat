@@ -17,13 +17,22 @@
          </form>-->
     <div id="messages" class="messages"></div>
 
-    <?php
-    if(array_key_exists("ChatId", $_GET)){
-        $chatId = $_GET['ChatId'];
-        echo "<div id='ChatId' hidden>" . $chatId . "</div>";
-    }
-    ?>
+    <div>
+        
 
+        <form action="Backend/AddMessageToChat.php" method="post">
+            <input class="m1" type="text" name="Message" placeholder="Please enter message" required/>
+            <?php
+            if(array_key_exists("ChatId", $_GET)){
+                $chatId = $_GET['ChatId'];
+                echo "<div id='ChatId' hidden >" . $chatId . "</div>";
+                echo "<input name='ChatId' value='" . $chatId . "' hidden />";
+            }
+            ?>
+            <input class="btnsub" type="submit" />
+
+        </form>
+    </div>
 
     <script>
     var request = new XMLHttpRequest();
